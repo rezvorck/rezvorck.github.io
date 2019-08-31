@@ -1,0 +1,799 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>•• RҿʓѴorck ••</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+      <meta name="description" content="rezvorck" />
+      <meta property="og:site_name" content="rezvorck" />
+      <meta property="og:title" content="rezvorck" />
+      <meta property="og:type" content="article" />
+      <meta property="og:image" content="" />
+      <meta property="og:url" content="" />
+      <meta property="twitter:card" content="summary_large_image" />
+	  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic" rel="stylesheet" type="text/css" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+      <style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';
+    content:none;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+body{
+    -webkit-text-size-adjust:none
+}
+mark{
+    background-color:transparent;
+    color:inherit
+}
+input::-moz-focus-inner{
+    border:0;
+    padding:0
+}
+input[type="text"],input[type="email"],select,textarea{
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    appearance:none
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    line-height: 1.0;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+strong {
+    color: inherit;
+    font-weight: bolder;
+}
+em {
+    font-style: italic;
+}
+code {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: normal;
+    text-indent: 0;
+    letter-spacing: 0;
+    font-size: 0.9em;
+    margin: 0 0.25em;
+    padding: 0.25em 0.5em;
+    background-color: rgba(144,144,144,0.25);
+    border-radius: 0.25em;
+}
+mark {
+    background-color: rgba(144,144,144,0.25);
+}
+a {
+    -moz-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    -ms-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    color: inherit;
+    text-decoration: underline;
+}
+s {
+    text-decoration: line-through;
+}
+body:before {
+    content: '';
+    display: block;
+    background-image: linear-gradient(45deg, #3B3B7A 0%, #91617E 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+body:after {
+    display: block;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #373761;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -moz-transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+    -webkit-transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+    -ms-transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+    transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+body.is-loading:after {
+    opacity: 1;
+    visibility: visible;
+}
+html {
+    font-size: 18pt;
+}
+#wrapper {
+    -webkit-overflow-scrolling: touch;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+#main {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    text-align: center;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: linear-gradient(30deg, rgba(255,255,255,0.822) 15%, #FFFFFF 59%);
+    box-shadow: 0rem 1.25rem 2.625rem 0.375rem rgba(0,0,0,0.18);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    -moz-transition: opacity 1.125s ease 0.5s,-moz-transform 1.125s ease 0.5s;
+    -webkit-transition: opacity 1.125s ease 0.5s,-webkit-transform 1.125s ease 0.5s;
+    -ms-transition: opacity 1.125s ease 0.5s,-ms-transform 1.125s ease 0.5s;
+    transition: opacity 1.125s ease 0.5s,transform 1.125s ease 0.5s;
+}
+#main > .inner {
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+    padding: 3rem 2.375rem;
+    max-width: 100%;
+    width: 40rem;
+}
+#main > .inner > * {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+#main > .inner > :first-child {
+    margin-top: 0 !important;
+}
+#main > .inner > :last-child {
+    margin-bottom: 0 !important;
+}
+#main > .inner > .full {
+    margin-left: calc(-2.375rem);
+    width: calc(100% + 4.75rem + 0.4725px);
+    max-width: calc(100% + 4.75rem + 0.4725px);
+}
+#main > .inner > .full:first-child {
+    margin-top: -3rem !important;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+#main > .inner > .full:last-child {
+    margin-bottom: -3rem !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+#main > .inner > .full.screen {
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
+    border-radius: 0 !important;
+    left: 50%;
+    right: auto;
+    margin-left: -50vw;
+}
+body.is-loading #main {
+    opacity: 0;
+    -moz-transform: scale(0.975);
+    -webkit-transform: scale(0.975);
+    -ms-transform: scale(0.975);
+    transform: scale(0.975);
+}
+.image {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    display: block;
+}
+.image a, .image span {
+    position: relative;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.image a img, .image span img {
+    display: block;
+}
+.image img {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.image.full img {
+    display: block;
+}
+.image.full:first-child img {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.image.full:last-child img {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+.image.full a, .image.full span {
+    display: block;
+}
+#image01 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+#image01 a, #image01 span {
+    border-radius: 100%;
+}
+#image01 img {
+    width: 7rem;
+    border-radius: 100%;
+}
+h1 br + br, h2 br + br, h3 br + br, p br + br {
+    display: block;
+    content: ' ';
+    margin-top: 0.75rem;
+}
+h1 .li, h2 .li, h3 .li, p .li {
+    display: list-item;
+    padding-left: 0.5em;
+    margin: 0.75em 0 0 1em;
+}
+#text01 br + br {
+    margin-top: 0.9rem;
+}
+#text01 {
+    color: rgba(40,40,43,0.4);
+    letter-spacing: -0.025rem;
+    font-size: 1em;
+    line-height: 1.5;
+}
+#text03 {
+    color: rgba(40,40,43,0.4);
+    letter-spacing: -0.025rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 1em;
+}
+
+#text03 > ul {
+  list-style-position: inside;
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 2;
+  list-style-type: decimal;
+/*  height: 200px;*/
+  list-style: square;
+  list-style-position: inside;
+  font-size: 0.64em;
+}
+          
+h1, h2, h3, p {
+    color: rgba(40,40,43,0.6);
+    font-family: 'Source Sans Pro';
+    letter-spacing: -0.075rem;
+    width: 100%;
+    font-size: 2.5em;
+    line-height: 1.25;
+    font-weight: 200;
+}
+hr {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    border: 0;
+    height: 2.25rem;
+    line-height: 2.25rem;
+}
+hr:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    background-color: rgba(40,40,43,0.149);
+    height: 1px;
+}
+.icons {
+    cursor: default;
+    padding: 0;
+    letter-spacing: 0;
+    font-size: 1.25em;
+    width: calc(100% + 0.75rem);
+    margin-left: -0.375rem;
+}
+.icons li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.375rem;
+}
+.icons li a {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 3em;
+    height: 3em;
+}
+.icons li a svg {
+    display: block;
+    -moz-transition: fill 0.25s ease;
+    -webkit-transition: fill 0.25s ease;
+    -ms-transition: fill 0.25s ease;
+    transition: fill 0.25s ease;
+}
+.icons li a .label {
+    display: none;
+}
+#icons01 li a svg {
+    width: 80%;
+    height: 80%;
+}
+#icons01 .n01 {
+    background-color: rgba(40,40,43,0.051);
+}
+#icons01 .n01 svg {
+    fill: rgba(40,40,43,0.6);
+}
+#icons01 .n01:hover {
+    background-color: rgba(40,40,43,0.169);
+}
+#icons01 .n02 {
+    background-color: rgba(40,40,43,0.051);
+}
+#icons01 .n02 svg {
+    fill: rgba(40,40,43,0.6);
+}
+#icons01 .n02:hover {
+    background-color: rgba(40,40,43,0.169);
+}
+#icons01 .n03 {
+    background-color: rgba(40,40,43,0.051);
+}
+#icons01 .n03 svg {
+    fill: rgba(40,40,43,0.6);
+}
+#icons01 .n03:hover {
+    background-color: rgba(40,40,43,0.169);
+}
+#icons01 .n04 {
+    background-color: rgba(40,40,43,0.051);
+}
+#icons01 .n04 svg {
+    fill: rgba(40,40,43,0.6);
+}
+#icons01 .n04:hover {
+    background-color: rgba(40,40,43,0.169);
+}
+@media (max-width: 1680px) {
+    html {
+        font-size: 13pt;
+    }
+}
+@media (max-width: 1280px) {
+    html {
+        font-size: 13pt;
+    }
+}
+@media (max-width: 980px) {
+    html {
+        font-size: 11pt;
+    }
+}
+@media (max-width: 736px) {
+    html {
+        font-size: 11pt;
+    }
+    #main > .inner {
+        padding: 3rem 2rem;
+    }
+    #main > .inner > * {
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    #main > .inner > .full {
+        margin-left: calc(-2rem);
+        width: calc(100% + 4rem + 0.4725px);
+        max-width: calc(100% + 4rem + 0.4725px);
+    }
+    #main > .inner > .full:first-child {
+        margin-top: -3rem !important;
+    }
+    #main > .inner > .full:last-child {
+        margin-bottom: -3rem !important;
+    }
+    #main > .inner > .full.screen {
+        margin-left: -50vw;
+    }
+    #image01 {
+        margin-top: 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    #image01 img {
+        width: 7rem;
+    }
+    #divider01 {
+        height: 2rem;
+        line-height: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    #main > .inner > * {
+        margin-top: 0.546875rem;
+        margin-bottom: 0.546875rem;
+    }
+}
+@media (max-width: 360px) {
+    #main > .inner {
+        padding: 2.25rem 1.5rem;
+    }
+    #main > .inner > * {
+        margin-top: 0.46875rem;
+        margin-bottom: 0.46875rem;
+    }
+    #main > .inner > .full {
+        margin-left: calc(-1.5rem);
+        width: calc(100% + 3rem + 0.4725px);
+        max-width: calc(100% + 3rem + 0.4725px);
+    }
+    #main > .inner > .full:first-child {
+        margin-top: -2.25rem !important;
+    }
+    #main > .inner > .full:last-child {
+        margin-bottom: -2.25rem !important;
+    }
+    #main > .inner > .full.screen {
+        margin-left: -50vw;
+    }
+    #text02 {
+        font-size: 2em;
+    }
+    #icons01 {
+        width: calc(100% + 0.5625rem);
+        margin-left: -0.28125rem;
+    }
+    #icons01 li {
+        margin: 0.28125rem;
+    }
+}
+</style>
+
+<style>
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0rem 1.25rem 2.625rem 0.375rem rgba(0,0,0,0.18);
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #316565;}
+
+ul.topnav li.right {float: right;}
+
+/*@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}*/
+
+</style>
+      <noscript>
+         <style>body {overflow: auto !important;}body:after {display: none !important;}#main > .inner {opacity: 1.0 !important;}#main {opacity: 1.0 !important;-moz-transform: none !important;-webkit-transform: none !important;-ms-transform: none !important;transform: none !important;-moz-transition: none !important;-webkit-transition: none !important;-ms-transition: none !important;transition: none !important;-moz-filter: none !important;-webkit-filter: none !important;-ms-filter: none !important;filter: none !important;}</style>
+      </noscript>
+   </head>
+   <body class="is-loading">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
+			<symbol id="icon-email" viewBox="0 0 24 24">
+				<path d="M2.402 19.575L4.234 17.7c2.536-2.598 2.74-2.807 3.473-3.55l.724-.736 1.677 1.676c.922.922 1.69 1.677 1.706 1.677.016 0 .77-.746 1.678-1.657l1.648-1.658.305.316 1.072 1.1c.994 1.014 1.998 2.04 2.85 2.916l1.41 1.436c.398.406.725.747.725.76 0 .01-4.39.02-9.757.02H1.987l.415-.425zm19.914-.483c-.145-.152-.556-.575-.915-.942-4.29-4.387-5.4-5.528-5.4-5.55 0-.01 1.485-1.502 3.3-3.317l3.3-3.3v6.692c0 3.68-.005 6.692-.01 6.692-.007 0-.13-.124-.274-.275zM1 12.632v-6.65l3.283 3.285c1.806 1.805 3.28 3.293 3.275 3.305-.004.012-.6.627-1.324 1.367-.724.738-1.616 1.65-1.983 2.026-1.38 1.414-2.087 2.135-2.66 2.717l-.59.6v-6.65zm5.775-2.574C4.02 7.304 1.767 5.038 1.767 5.025 1.767 5.01 6.29 5 11.817 5c5.527 0 10.05.012 10.05.027 0 .037-10.017 10.04-10.054 10.04-.016 0-2.283-2.254-5.038-5.01z" />
+			</symbol>
+			<symbol id="icon-github" viewBox="0 0 24 24">
+				<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+			</symbol>
+			<symbol id="icon-4pda" viewBox="35 -35 120 120">
+				<g transform="translate(0.000000,120.000000) scale(0.100000,-0.100000)">
+					<path d="M690 1173 l-169 -228 -1 -152 0 -153 255 0 255 0 0 -60 0 -60 150 0 150 0 0 440 0 440 -235 0 -235 0 -170 -227z m340 -138 l0 -145 -105 0 c-58 0 -105 3 -105 6 0 6 202 284 207 284 2 0 3 -65 3 -145z"/>
+				</g>
+			</symbol>
+			<symbol id="icon-vk" viewBox="0 0 24 24">
+				<path d="M18.614 11.742s2.635-3.718 2.897-4.94c.088-.435-.104-.68-.558-.68h-2.286c-.523 0-.715.227-.872.56 0 0-1.236 2.632-2.74 4.292-.483.536-.728.698-.995.698-.216 0-.315-.18-.315-.663V6.767c0-.593-.07-.768-.558-.768H9.522c-.28 0-.454.162-.454.384 0 .56.855.685.855 2.2v3.123c0 .628-.035.872-.332.872-.784 0-2.65-2.706-3.698-5.777C5.682 6.175 5.455 6 4.862 6H2.576C2.244 6 2 6.227 2 6.558c0 .61.716 3.438 3.525 7.225 1.885 2.548 4.363 3.927 6.597 3.927 1.36 0 1.693-.227 1.693-.803v-1.954c0-.49.192-.698.47-.698.315 0 .87.1 2.165 1.378 1.536 1.466 1.64 2.077 2.478 2.077h2.566c.26 0 .506-.122.506-.558 0-.576-.75-1.606-1.903-2.828-.47-.628-1.24-1.308-1.483-1.623-.35-.365-.244-.575 0-.958" />
+			</symbol>
+			<symbol id="icon-tg" viewBox="0 0 24 24">
+				<g fill-rule="evenodd">
+					<path d="M10.45 13.563c1.146 1 1.993 3.255 1.993 3.255.388.215.67.104.766-.36l2.193-7.35c.142-.568-.216-.826-.588-.657L7.03 11.38c-.557.22-.553.53-.102.67 0 0 2.375.51 3.52 1.513zM12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z" />
+					<path d="M15.433 8.93c.142.108.213.324.134.63l-2.28 7.347c-.1.464-.392.575-.796.36 0 0-.88-2.253-2.07-3.254C9.228 13.01 6.76 12.5 6.76 12.5c-.41-.12-.463-.373-.086-.583.055.052.14.098.254.132 0 0 2.375.51 3.52 1.513 1.148 1 1.995 3.255 1.995 3.255.388.215.67.104.766-.36l2.193-7.35c.016-.063.026-.123.03-.178z" fill="#currentColor" opacity="0.5"/>
+				</g>
+			</symbol>
+			<symbol id="icon-wp" viewBox="0 0 24 24">
+				<path d="M3.0750497,11.9189501 C3.07456006,13.4906719 3.48711086,15.0253918 4.27152715,16.3780263 L3,21 L7.75118928,19.759834 C9.06015225,20.4700069 10.5339931,20.8448574 12.0339188,20.8453448 L12.0379251,20.8453448 C16.9772282,20.8453448 20.9979515,16.8439416 20.9999992,11.9259073 C21.001023,9.54271112 20.0695787,7.30176221 18.3773548,5.61588797 C16.685398,3.93001374 14.4351087,3.00110785 12.0375244,3 C7.09759806,3 3.07709732,7.00104876 3.0750497,11.9189501 Z M9.6825647,7.69346618 C9.5074636,7.30424299 9.3231679,7.2964388 9.15658863,7.28962133 C9.02037397,7.28379061 8.8643797,7.28414943 8.70865454,7.28414943 C8.55283968,7.28414943 8.29956205,7.34268091 8.08543995,7.57658261 C7.87113846,7.81048431 7.26725496,8.37588504 7.26725496,9.52583818 C7.26725496,10.6759259 8.1049056,11.7871271 8.22165462,11.9432111 C8.33853819,12.0990708 9.83864867,14.5343396 12.2143992,15.4712471 C14.1888614,16.249828 14.5906431,16.094955 15.0192012,16.0560237 C15.4477594,16.0170476 16.4020693,15.4907127 16.5968603,14.9449122 C16.7916513,14.3992013 16.7916513,13.9314428 16.7332096,13.8336661 C16.6747678,13.7362481 16.5189529,13.6778063 16.2851858,13.5609228 C16.0514186,13.4440392 14.9023177,12.8785039 14.6880162,12.8005965 C14.4737595,12.7226891 14.3178998,12.6837129 14.162085,12.9177043 C14.0062252,13.1514715 13.5585603,13.6778063 13.4221662,13.8336661 C13.285817,13.9898846 13.1494678,14.0093502 12.9157006,13.8924667 C12.6819335,13.7752243 11.9291423,13.5286744 11.0360998,12.7324219 C10.341257,12.11293 9.8721529,11.3478494 9.73575883,11.113858 C9.59940962,10.8800909 9.72113717,10.7534745 9.83842441,10.6369497 C9.94337743,10.532221 10.0721916,10.3641167 10.1890751,10.227633 C10.3056896,10.0911492 10.3446657,9.99373127 10.4225732,9.83787156 C10.5004806,9.68178759 10.4615493,9.54530382 10.4031075,9.42842025 C10.3446657,9.31153668 9.89040755,8.15561826 9.6825647,7.69346618 Z" fill-rule="evenodd"></path>
+			</symbol>
+      </svg>
+      <div id="wrapper">
+
+         <div id="main">
+            <div class="inner">
+               
+            <ul id="icons01" class="icons">
+                  <li>
+                     <a class="n01" target="_blank" href="mailto:rezvorck@mail.ru">
+                        <svg>
+                           <use xlink:href="#icon-email"></use>
+                        </svg>
+                        <span class="label">Mail</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="n01" target="_blank" href="https://github.com/rezvorck?tab=repositories">
+                        <svg>
+                           <use xlink:href="#icon-github"></use>
+                        </svg>
+                        <span class="label">GitHub</span>
+                     </a>
+                  </li>
+				  <li>
+                     <a class="n01" target="_blank" href="https://4pda.ru/forum/index.php?showuser=1908318">
+                        <svg>
+                           <use xlink:href="#icon-4pda"></use>
+                        </svg>
+                        <span class="label">4PDA</span>
+                     </a>
+                  </li>
+				  <li>
+                     <a class="n01" target="_blank" href="https://vk.com/rezvorck">
+                        <svg>
+                           <use xlink:href="#icon-vk"></use>
+                        </svg>
+                        <span class="label">Vkontakte</span>
+                     </a>
+                  </li>
+				  <li>
+                     <a class="n01" target="_blank" href="https://telegramim.ru/@rezvorck">
+                        <svg>
+                           <use xlink:href="#icon-tg"></use>
+                        </svg>
+                        <span class="label">Telegram</span>
+                     </a>
+                  </li>
+				  <li>
+                     <a class="n01" target="_blank" href="https://wa.me/79053562635">
+                        <svg>
+                           <use xlink:href="#icon-wp"></use>
+                        </svg>
+                        <span class="label">WhatsApp</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <script>var on = addEventListener,
+    $ = function(q) {
+        return document.querySelector(q)
+    },
+    $$ = function(q) {
+        return document.querySelectorAll(q)
+    },
+    $body = document.body,
+    $inner = $('.inner'),
+    client = (function() {
+        var o = {
+                browser: 'other',
+                browserVersion: 0,
+                os: 'other',
+                osVersion: 0
+            },
+            ua = navigator.userAgent,
+            a, i;
+        a = [
+            ['firefox', /Firefox\/([0-9\.]+)/],
+            ['edge', /Edge\/([0-9\.]+)/],
+            ['safari', /Version\/([0-9\.]+).+Safari/],
+            ['chrome', /Chrome\/([0-9\.]+)/],
+            ['ie', /Trident\/.+rv:([0-9]+)/]
+        ];
+        for (i = 0; i < a.length; i++) {
+            if (ua.match(a[i][1])) {
+                o.browser = a[i][0];
+                o.browserVersion = parseFloat(RegExp.$1);
+                break;
+            }
+        }
+        a = [
+            ['ios', /([0-9_]+) like Mac OS X/, function(v) {
+                return v.replace('_', '.').replace('_', '');
+            }],
+            ['ios', /CPU like Mac OS X/, function(v) {
+                return 0
+            }],
+            ['android', /Android ([0-9\.]+)/, null],
+            ['mac', /Macintosh.+Mac OS X ([0-9_]+)/, function(v) {
+                return v.replace('_', '.').replace('_', '');
+            }],
+            ['windows', /Windows NT ([0-9\.]+)/, null]
+        ];
+        for (i = 0; i < a.length; i++) {
+            if (ua.match(a[i][1])) {
+                o.os = a[i][0];
+                o.osVersion = parseFloat(a[i][2] ? (a[i][2])(RegExp.$1) : RegExp.$1);
+                break;
+            }
+        }
+        return o;
+    }()),
+    trigger = function(t) {
+        if (client.browser == 'ie') {
+            var e = document.createEvent('Event');
+            e.initEvent(t, false, true);
+            dispatchEvent(e);
+        } else dispatchEvent(new Event(t));
+    };
+on('load', function() {
+    setTimeout(function() {
+        $body.className = $body.className.replace(/\bis-loading\b/, 'is-playing');
+        setTimeout(function() {
+            $body.className = $body.className.replace(/\bis-playing\b/, 'is-ready');
+        }, 1625);
+    }, 100);
+});
+var style, sheet, rule;
+style = document.createElement('style');
+style.appendChild(document.createTextNode(''));
+document.head.appendChild(style);
+sheet = style.sheet;
+if (client.os == 'android') {
+    (function() {
+        sheet.insertRule('body::after { }', 0);
+        rule = sheet.cssRules[0];
+        var f = function() {
+            rule.style.cssText = 'height: ' + (Math.max(screen.width, screen.height)) + 'px';
+        };
+        on('load', f);
+        on('orientationchange', f);
+        on('touchmove', f);
+    })();
+} else if (client.os == 'ios') {
+    (function() {
+        sheet.insertRule('body::after { }', 0);
+        rule = sheet.cssRules[0];
+        rule.style.cssText = '-webkit-transform: scale(1.0)';
+    })();
+    (function() {
+        sheet.insertRule('body.ios-focus-fix::before { }', 0);
+        rule = sheet.cssRules[0];
+        rule.style.cssText = 'height: calc(100% + 60px)';
+        on('focus', function(event) {
+            $body.classList.add('ios-focus-fix');
+        }, true);
+        on('blur', function(event) {
+            $body.classList.remove('ios-focus-fix');
+        }, true);
+    })();
+} else if (client.browser == 'ie') {
+    (function() {
+        var t, f;
+        f = function() {
+            var mh, h, s, xx, x, i;
+            x = $('#wrapper');
+            x.style.height = 'auto';
+            if (x.scrollHeight <= innerHeight) x.style.height = '100vh';
+            xx = $$('.container.full');
+            for (i = 0; i < xx.length; i++) {
+                x = xx[i];
+                s = getComputedStyle(x);
+                x.style.minHeight = '';
+                x.style.height = '';
+                mh = s.minHeight;
+                x.style.minHeight = 0;
+                x.style.height = '';
+                h = s.height;
+                if (mh == 0) continue;
+                x.style.height = (h > mh ? 'auto' : mh);
+            }
+        };
+        (f)();
+        on('resize', function() {
+            clearTimeout(t);
+            t = setTimeout(f, 250);
+        });
+        on('load', f);
+    })();
+}</script>
+   </body>
+</html>
